@@ -3,6 +3,7 @@ import './App.css';
 import Cardlist from './components/card-list/card-list.components';
 import SearchBox from './components/search-box/search-box';
 import Hello from './page/hello';
+import NavBar from './components/navbar/navbar.components';
 
 class App extends Component {
   constructor() {
@@ -39,6 +40,7 @@ class App extends Component {
             onChange={this.onChange}
           />
           <Hello />
+          <NavBar />
           {/* <p>
             {this.state.nameDetails.map((namedetails) => (
               <h1>
