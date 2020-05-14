@@ -8,6 +8,10 @@ import Homepage from './page/homepage/homepage.component';
 import { Switch, Route } from 'react-router-dom';
 import ShopPage from './page/shop-page/shop-page.component';
 import Header from './components/header/header-component';
+import SideBarPage from './page/sidebar/sidebar.component';
+import Footer from './components/footer/footer.component';
+import SignInSignUP from './page/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import User from './page/admin/user/user.component';
 
 class App extends Component {
   constructor() {
@@ -44,7 +48,9 @@ class App extends Component {
             onChange={this.onChange}
           /> */}
           <Header />
-          <Homepage />
+          {/* <Homepage /> */}
+          {/* <Footer /> */}
+          {/* <SideBarPage /> */}
           {/* <p>
             {this.state.nameDetails.map((namedetails) => (
               <h1>
@@ -73,6 +79,8 @@ class App extends Component {
 
           <Switch>
             <Route exact path='/shop' component={ShopPage} />
+            <Route path='/signin' component={SignInSignUP} />
+            <Route exact path='/admin/user' component={User} />
           </Switch>
           <div></div>
         </header>
